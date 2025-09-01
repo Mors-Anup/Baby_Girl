@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Our Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Status Bar -->
+    <div class="mobile-status">
+        <div class="status-left">
+            <div class="love-indicator">💕</div>
+        </div>
+        <div class="status-right">
+            <span id="currentPage">1</span>/<span id="totalPages">5</span>
+        </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Swipe Hint (shows only on first load) -->
+    <div class="swipe-hint" id="swipeHint">
+        <div class="swipe-text">Swipe to continue</div>
+        <div class="swipe-arrow">→</div>
+    </div>
+
+    <!-- Pages Container -->
+    <div class="pages-container" id="pagesContainer">
+        
+        <!-- Page 1: Welcome -->
+        <div class="page show" data-page="1">
+            <div class="content">
+                <div class="mobile-header">
+                    <div class="date-badge">Month One</div>
+                    <div class="sparkle">✨</div>
+                </div>
+                <h1 class="main-title">Our Beginning</h1>
+                <div class="golden-line"></div>
+                <p class="subtitle">A celebration of 30 beautiful days</p>
+                <div class="dedication-card">
+                    <p>For <span class="highlight">Baby Girl</span></p>
+                    <p class="small-text">who makes every moment extraordinary</p>
+                </div>
+                <div class="floating-hearts">
+                    <span class="heart">💖</span>
+                    <span class="heart">💕</span>
+                    <span class="heart">💝</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2: Photo & Music -->
+        <div class="page" data-page="2">
+            <div class="content">
+                <h2 class="page-title">This Moment</h2>
+                <div class="golden-line"></div>
+                
+                <div class="photo-section">
+                    <div class="photo-frame">
+                        <img src="images/your-photo.jpg" alt="Our Memory" class="main-photo">
+                        <div class="photo-overlay">
+                            <div class="photo-date">Our perfect moment Because I don't have your picture.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-section">
+                    <div class="music-title">The soundtrack to our story</div>
+                    <div class="audio-player">
+                        <button class="play-button" id="playBtn">
+                            <div class="play-circle">
+                                <span id="playIcon">▶</span>
+                            </div>
+                            <span id="playText">Play Our Song</span>
+                        </button>
+                        <div class="audio-visualizer" id="audioViz">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <audio id="audio" loop>
+                        <source src="audio/your-song.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3: Heart Message -->
+        <div class="page" data-page="3">
+            <div class="content">
+                <h2 class="page-title">From My Heart</h2>
+                <div class="golden-line"></div>
+                
+                <div class="message-container">
+                    <div class="message-card">
+                        <p>I don't have any specific reason to love you but I do love you.</p>
+                    </div>
+                    
+                    <div class="message-card">
+                        <p>I love your lips, I don't know why but on video calls I keep looking at your lips all the time.</p>
+                    </div>
+                    
+                    <div class="message-card">
+                        <p>What we have is rare and beautiful, and I find myself grateful for every conversation, every shared silence, every moment that has led us here.</p>
+                    </div>
+                </div>
+
+                <div class="heart-animation">💖</div>
+            </div>
+        </div>
+
+        <!-- Page 4: Memories -->
+        <div class="page" data-page="4">
+            <div class="content">
+                <h2 class="page-title">Moments I Treasure</h2>
+                <div class="golden-line"></div>
+                
+                <div class="memories-timeline">
+                    <div class="memory-item">
+                        <!-- <div class="memory-dot">1</div> -->
+                        <div class="memory-card">
+                            <h3>🎬 Watching  Movie</h3>
+                            <p>I really enjoyed it when we were watching the movie and my favorite anime (ONE PIECE).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="memory-item">
+                        <!-- <div class="memory-dot">2</div> -->
+                        <div class="memory-card">
+                            <h3> Things </h3>
+                            <p>There are many things that we will not be able to do this month, I hope we will be able to do all these things next month.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="memory-item">
+                        <div class="memory-dot">3</div>
+                        <div class="memory-card">
+                            <h3>🌄 The Quiet Morning</h3>
+                            <p>Your smile over breakfast, and the realization that this is what happiness looks like.</p>
+                        </div>
+                    </div> -->
+                    
+                    <!-- <div class="memory-item">
+                        <div class="memory-dot">4</div>
+                        <div class="memory-card">
+                            <h3>🎵 Our Song</h3>
+                            <p>The moment the melody started and we both knew it would be ours forever.</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5: Future -->
+        <div class="page" data-page="5">
+            <div class="content">
+                <h2 class="page-title">What Lies Ahead</h2>
+                <div class="golden-line"></div>
+                
+                <div class="promises-section">
+                    <div class="promise-card">
+                        <div class="quote-mark">"</div>
+                        <p>I promise to cherish every day we have, to find wonder in the ordinary, and to love you with the same intensity that brought us to this moment.</p>
+                    </div>
+                    
+                    <div class="promise-card">
+                        <div class="quote-mark">"</div>
+                        <p>I promise to be your safe harbor in storms and your adventure companion in calm seas, to grow alongside you and to never stop discovering new things to love about you.</p>
+                    </div>
+                </div>
+
+                <div class="final-message">
+                    <div class="celebration">🎉</div>
+                    <p class="future-text">Here's to month two, and all the months that follow</p>
+                    <div class="signature-section">
+                        <div class="signature">With endless love,</div>
+                        <div class="name"> Stupid </div>
+                        <div class="love-symbol">💕</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <button class="nav-button" id="prevBtn" disabled>
+            <span class="nav-icon">←</span>
+        </button>
+        
+        <div class="nav-dots">
+            <span class="dot active" data-page="1"></span>
+            <span class="dot" data-page="2"></span>
+            <span class="dot" data-page="3"></span>
+            <span class="dot" data-page="4"></span>
+            <span class="dot" data-page="5"></span>
+        </div>
+        
+        <button class="nav-button" id="nextBtn">
+            <span class="nav-icon">→</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
